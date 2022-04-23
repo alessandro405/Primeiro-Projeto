@@ -1,0 +1,35 @@
+package impl;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import entidades.Usuario;
+import fabrica.FabricaConexaoJDBC;
+
+public class UsuarioRepositorioJDBC {
+	
+	public List<Usuario> listar() throws SQLException, IOException {
+		List<Usuario> usuarios = new ArrayList<Usuario>();
+		try (Connection conexao = FabricaConexaoJDBC.criarConexao()) {
+			Statement comando = conexao.createStatement();
+			ResultSet rs = comando.executeQuery("SELECT * FROM usuarios WHERE email = ? AND senha ?");
+			while (rs.next()) {
+				Usuario usuario = new Usuario();
+				usuario.setEmail(rs.getString("email"));
+				usuario.setSenha(rs.getString("senha"));
+				usuarios.add(usuario);
+				
+			}
+		}
+		return usuarios;
+	}
+	
+	
+	}
+	
+	

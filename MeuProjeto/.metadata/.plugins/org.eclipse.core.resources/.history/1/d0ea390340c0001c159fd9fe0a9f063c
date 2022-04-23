@@ -1,0 +1,69 @@
+package br.com.devjunior.servlets;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import entidades.Usuario;
+import impl.UsuarioRepositorioJDBC;
+
+@WebServlet(urlPatterns = { "/login" })
+public class Teste extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2706311068111453632L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/WEB-INF/paginas/NewFile.jsp");
+		dispatcher.forward(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		UsuarioRepositorioJDBC aut = new UsuarioRepositorioJDBC();
+		Usuario novoContato = new Usuario();
+		novoContato.setEmail(req.getParameter("email"));
+		novoContato.setSenha(req.getParameter("senha"));
+		
+		try {
+			Usuario usu = aut.autenticar(novoContato);
+			
+			if(usu != null) {
+				resp.sendRedirect(req.getContextPath() + "/lista"); 
+
+			}else {
+				resp.sendRedirect(req.getContextPath() + "/editar");
+			}
+			
+		} catch (SQLException e) {
+			req.getSession().setAttribute("mensagemErro", e.getMessage());
+
+		}
+
+	}
+
+}
+
+/*
+ * @Override protected void doGet(HttpServletRequest req, HttpServletResponse
+ * resp) throws ServletException, IOException { UsuarioRepositorioJDBC
+ * agendaRepositorio = new UsuarioRepositorioJDBC(); try { List<Usuario> user =
+ * agendaRepositorio.listar(); req.setAttribute("listaUsuarios", user); } catch
+ * (SQLException e) { req.setAttribute("mensagemErro", e.getMessage()); } Object
+ * mensagemErro = req.getSession().getAttribute("mensagemErro"); if(mensagemErro
+ * != null) { req.setAttribute("mensagemErro", mensagemErro.toString());
+ * req.getSession().removeAttribute("mensagemErro"); } RequestDispatcher
+ * dispatcher =
+ * req.getServletContext().getRequestDispatcher("/WEB-INF/paginas/Teste.jsp");
+ * dispatcher.forward(req, resp);
+ * 
+ * }
+ */

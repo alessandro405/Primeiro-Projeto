@@ -1,0 +1,15 @@
+package br.com.devjunior.servlets;
+
+import impl.UsuarioRepositorioJDBC;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		UsuarioRepositorioJDBC a = new UsuarioRepositorioJDBC();
+
+		System.out.println(a.listar());
+
+	}
+
+}

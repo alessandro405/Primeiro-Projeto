@@ -1,0 +1,18 @@
+package br.com.devjunior.servlets;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import impl.UsuarioRepositorioJDBC;
+
+public class Teste {
+
+	public static void main(String[] args) throws SQLException, IOException {
+
+		UsuarioRepositorioJDBC a = new UsuarioRepositorioJDBC();
+
+		System.out.println(a.listar());
+
+	}
+
+}

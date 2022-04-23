@@ -1,0 +1,56 @@
+package impl;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import entidades.Usuario;
+import fabrica.FabricaConexaoJDBC;
+
+public class UsuarioRepositorioJDBC {
+	
+	
+	public void autenticar(Usuario user) throws IOException, SQLException {
+		try (Connection conexao = FabricaConexaoJDBC.criarConexao()){
+			PreparedStatement comando = conexao.prepareStatement("SELECT * FROM usuarios WHERE email = ? AND senha ?");
+			comando.setString(1, user.getEmail());
+			comando.setString(2, user.getSenha());
+			comando.execute();
+		
+			}
+		}
+
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	/*public ResultSet autenticar() throws IOException, SQLException {
+		Usuario entidade = new Usuario();
+		Connection conexao = null;
+		try {
+			conexao = FabricaConexaoJDBC.criarConexao();
+			PreparedStatement comando = conexao.prepareStatement("SELECT * FROM usuarios WHERE email = ? AND senha ?");
+			comando.setString(1, entidade.getEmail());
+			comando.setString(2, entidade.getSenha());
+			comando.execute();
+		} finally {
+			if (conexao != null) {
+				conexao.close();
+			}
+		}
+		return null;
+	
+
+
+}
+
+}
+*/
