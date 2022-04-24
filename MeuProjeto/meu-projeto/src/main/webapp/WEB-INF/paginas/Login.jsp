@@ -6,11 +6,7 @@
 <html>
 <head>
 	<link href="CSS/css.login/login.css" rel="stylesheet">
-    <link href="CSS/css.login/css2.css" rel="stylesheet">
-    <link href="CSS/css.login/css3.css" rel="stylesheet">
-    <link href="CSS/css.login/css4.css" rel="stylesheet">
-   <!--  <link href="CSS/css.login/css5.css" rel="stylesheet"> -->
-    <!-- <link href="CSS/css.login/css6.css" rel="stylesheet"> -->
+    <link href="CSS/css.login/login2.css" rel="stylesheet">
 <meta charset="ISO-8859-1">
 <title>Login de Usuario</title>
 </head>

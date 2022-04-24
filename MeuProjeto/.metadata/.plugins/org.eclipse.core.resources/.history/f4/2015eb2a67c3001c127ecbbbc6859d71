@@ -1,0 +1,5 @@
+@charset "ISO-8859-1";
+
+.user-box p {
+	color: f8f8ff;
+}

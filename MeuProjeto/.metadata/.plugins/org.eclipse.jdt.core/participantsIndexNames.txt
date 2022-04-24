@@ -3,6 +3,8 @@ C:\DEV\Back-End\Java\Workspaces\TESTE\.metadata\.plugins\org.eclipse.jst.jsp.cor
 \meu-projeto\src\main\java
 C:\DEV\Back-End\Java\Workspaces\MeuProjeto\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2122148049.index
 \meu-projeto\src\main\java
+C:\DEV\Back-End\Java\Workspaces\Primeiro-Projeto\MeuProjeto\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2122148049.index
+\meu-projeto\src\main\java
 C:\DEV\Back-End\Java\Workspaces\TESTE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\118321838.index
 \meu-projeto\src\main\java
 C:\DEV\Back-End\Java\Workspaces\TESTE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3200273821.index
