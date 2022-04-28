@@ -1,0 +1,67 @@
+.alterar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+button {
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	padding: 5px;
+	background: white;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+input {
+	top: 50%;
+	left: 50%;
+	width: 230px;
+	padding: 5px;
+	background: white;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+input:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+p, h2 {
+	color: white;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+	display: block; 
+	margin-top: 30px;
+	margin-left : auto;
+	margin-right: auto;
+	left: 50%;
+	width: 80px;
+	padding: 5px;
+	background: #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: auto;
+	text-align: center;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}

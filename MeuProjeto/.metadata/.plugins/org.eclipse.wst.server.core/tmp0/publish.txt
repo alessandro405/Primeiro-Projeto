@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Sat Apr 23 22:45:16 BRT 2022
+#Wed Apr 27 20:35:23 BRT 2022
 org.eclipse.jst.j2ee.server\:entidades=WEB-INF/lib/entidades.jar
 org.eclipse.jst.j2ee.server\:repositorios=WEB-INF/lib/repositorios.jar

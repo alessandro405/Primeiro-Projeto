@@ -9,7 +9,7 @@
 <title>Alterar contato ${contato.nome}</title>
 </head>
 <body>
-	<a href="${pageContext.request.contextPath}/lista">Inicio</a>
+	<a href="${pageContext.request.contextPath}/lista">INICIO</a>
 	<div class="alterar">
 		<h2>Alterar contato: ${contato.nome}</h2>
 		<form method="post" action="${pageContext.request.contextPath}/editar">

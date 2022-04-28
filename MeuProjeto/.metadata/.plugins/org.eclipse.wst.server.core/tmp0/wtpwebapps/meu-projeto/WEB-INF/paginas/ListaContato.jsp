@@ -1,3 +1,6 @@
+<%@page import="com.mysql.cj.jdbc.ha.ReplicationMySQLConnection"%>
+<%@page import="impl.UsuarioRepositorioJDBC"%>
+<%@page import="entidades.Usuario"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="jstl"%>
@@ -9,7 +12,8 @@
 <title>Lista de Contatos</title>
 </head>
 <body>
-	<a href="${pageContext.request.contextPath}/logout">Logout</a>
+	<h2>&nbsp; &nbsp;Seja bem vindo !</h2>
+	<a class="aa" href="${pageContext.request.contextPath}/logout">SAIR</a>
 	<div class="agenda">
 		<h3>Lista de contatos</h3>
 		<p style="color: red;">${mensagemErro}</p>
@@ -28,16 +32,17 @@
 						<td>${contato.nome}</td>
 						<td>${contato.idade}</td>
 						<td>${contato.telefone}</td>
-						<td><a
+						<td>&nbsp; &nbsp;<a
 							href="${pageContext.request.contextPath}/editar?id=${contato.id}">Editar</a>
-							<a
+							&nbsp;&nbsp;<a
 							href="${pageContext.request.contextPath}/excluir?id=${contato.id}">Excluir</a>
+							&nbsp;&nbsp;
 						</td>
 				</jstl:forEach>
 			</tbody>
 		</table>
-		<a id="criar" href="${pageContext.request.contextPath}/incluir">Criar novo
-			contato...</a>
+		 <br>
+		<a class="criar" href="${pageContext.request.contextPath}/incluir">Criar novo contato</a>
 	</div>
 </body>
 </html>

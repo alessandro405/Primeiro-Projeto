@@ -1,0 +1,13 @@
+package br.com.devjunior.login.servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class CriarConta extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4986673057527772154L;
+	
+
+}

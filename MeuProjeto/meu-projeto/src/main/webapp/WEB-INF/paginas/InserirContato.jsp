@@ -9,7 +9,7 @@
 <title>Iclusão de contato</title>
 </head>
 <body>
-	<a href="${pageContext.request.contextPath}/lista">Inicio</a>
+	<a href="${pageContext.request.contextPath}/lista">INICIO</a>
 	<div class="inserir">
 		<h2>Inclusão de contato</h2>
 		<form method="post"

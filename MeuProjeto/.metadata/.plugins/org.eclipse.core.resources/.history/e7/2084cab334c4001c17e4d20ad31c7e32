@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+
+.agenda {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+h3, th, td {
+	color: white;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.aa {
+	position: absolute;
+	transform: translate(100%, 10%);
+	top: 0%;
+	left: 50%;
+	width: 70px;
+	padding: 5px;
+	background: #999999;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+.aa:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.aa:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.aa:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.aa{
+	top: 0%;
+	left: 50%;
+	width: 70px;
+	padding: 5px;
+	background: #999999;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}

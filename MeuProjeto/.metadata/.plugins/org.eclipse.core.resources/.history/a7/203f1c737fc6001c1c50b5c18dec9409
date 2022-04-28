@@ -1,0 +1,82 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: linear-gradient( #808080, #D3D3D3);
+}
+
+p, h2{
+	color: white;
+}
+
+.login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	/* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); */
+	border-radius: 10px;
+}
+
+.login-box:hover{
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+button {
+	color: black;
+	text-decoration: none;
+	width: 80px;
+	padding: 5px;
+	background: white;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: auto;
+	text-align: center;
+}
+
+button:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+input {
+	top: 50%;
+	left: 50%;
+	width: 230px;
+	padding: 5px;
+	background: white;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+input:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.nova-conta{
+	color: black;
+	text-decoration: none;
+	width: 80px;
+	padding: 5px;
+	background: white;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: auto;
+	text-align: center;
+}
+
+.nova-conta:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+footer{
+	margin-top: 900px;
+	text-align: center;
+}
